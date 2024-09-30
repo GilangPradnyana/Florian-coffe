@@ -175,9 +175,10 @@ nav {
     }
     .content p {
         min-width: 70%;
-        font-weight: 400;
+        font-weight: 200;
         mix-blend-mode: difference;
         margin-bottom: 3rem;
+        line-height: 1.5rem;
     }
     .content a {
         border: 1px solid #B6895B;
@@ -194,6 +195,8 @@ nav {
 }
 /* Tab */
 @media screen and (min-width:631px) {
-
+    hmtl {
+        font-size: 70%;
+    }
 }
 /* Desktop */
