@@ -149,7 +149,7 @@ nav {
         font-size: 50%;
     }
     nav {
-        gap: 22rem;
+        gap: 16.4rem;
         padding: 5% 2%;
         align-items: center;
     }
@@ -167,7 +167,7 @@ nav {
     }
     /* content section */
     .content {
-        margin-top: 38rem;
+        margin-top: 20rem;
     }
     .content h1 {
         min-width: 90%;
@@ -175,14 +175,20 @@ nav {
     }
     .content p {
         min-width: 70%;
-        
+        font-weight: 400;
+        mix-blend-mode: difference;
+        margin-bottom: 3rem;
     }
     .content a {
-        border: 2px solid #B6895B;
+        border: 1px solid #B6895B;
+        padding: 1rem 2.5rem;
+        font-weight: 300;
+        font-size: 1.3rem;
     }
     .content a:hover {
         background-color: white;
         color: var(--color-sc);
+        font-weight: 400;
     }
     
 }
