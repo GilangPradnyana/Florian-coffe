@@ -224,7 +224,6 @@ section h1 span {
         min-width: 70%;
         font-weight: 200;
         mix-blend-mode: difference;
-        margin-bottom: 3rem;
         line-height: 1.5rem;
     }
     .content a {
@@ -238,8 +237,14 @@ section h1 span {
         color: var(--color-sc);
         font-weight: 400;
     }
-    
-}
+
+    /* about us */
+    .section {
+        flex-wrap: wrap;
+    }
+    .section .content {
+        margin-top: -1rem;
+    }
 /* Tab */
 @media screen and (min-width:631px) {
     hmtl {
