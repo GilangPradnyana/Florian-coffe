@@ -145,10 +145,49 @@ nav {
 
 /* Media breakpoint */
 @media screen and (max-width:630px) {
-
+    html{
+        font-size: 50%;
+    }
+    nav {
+        gap: 22rem;
+        padding: 5% 2%;
+        align-items: center;
+    }
+    .navbar-nav {
+        display: none;
+    }
+    .title {
+        font-size: 2rem;
+    }
+    .ham {
+        color: white;
+    }
+    #menu {
+        display: block;
+    }
+    /* content section */
+    .content {
+        margin-top: 38rem;
+    }
+    .content h1 {
+        min-width: 90%;
+        font-size: 5rem;
+    }
+    .content p {
+        min-width: 70%;
+        
+    }
+    .content a {
+        border: 2px solid #B6895B;
+    }
+    .content a:hover {
+        background-color: white;
+        color: var(--color-sc);
+    }
+    
 }
 /* Tab */
-media screen and (min-width:631px) {
+@media screen and (min-width:631px) {
 
 }
 /* Desktop */
