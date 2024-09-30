@@ -30,7 +30,7 @@ header {
 nav {
     display: flex;
     align-items: center;
-    gap: 13rem;
+    gap: 11.5rem;
     padding: 2% 2%;
 }
 .show-navbar {  /* for JS */
@@ -92,23 +92,23 @@ nav {
 }
 
 /* content section */
-.content {
+header .content {
     padding: var(--pad-pr);
     margin-top: 8rem;
     color: var(--color-pr);
 }
-.content h1 {
+header .content h1 {
     font-family: var(--font-pr);
     font-size: 4rem;
     font-weight: 700;
     width: 50%;
     line-height: 4.5rem;
 }
-.content h1 span{
+header .content h1 span{
     color: var(--color-sc);
     font-style: italic;
 }
-.content p {
+header .content p {
     font-family: var(--font-sc);
     width: 40%;
     margin-top: 1rem;
@@ -116,7 +116,7 @@ nav {
     line-height: 1.3rem;
     margin-bottom: 1.6rem;
 }
-.content a {
+header .content a {
     text-decoration: none;
     color: var(--color-pr);
     font-family: var(--font-sc);
@@ -134,12 +134,59 @@ nav {
     -ms-transition: .2s ease;
     -o-transition: .2s ease;
 }
-.content a:hover {
+header .content a:hover {
     background-color: white;
     border: none;
     color: #010101;
 }
 
+/* About us section */
+section {
+    margin-top: 6rem;
+    padding: var(--pad-pr);
+}
+section h1.title {
+    color: white;
+    text-align: center;
+    margin-bottom: 5rem;
+    font-family: 'Poppins';
+    font-size: 2rem;
+    font-weight: 700;
+}
+section h1 span {
+    color: #B6895B;
+    font-style: italic;
+}
+.section {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    margin-bottom: 10rem;
+}
+.section img {
+    width: 50rem;
+    height: 25rem;
+    border-radius: 1.5rem;
+    -webkit-border-radius: 1.5rem;
+    -moz-border-radius: 1.5rem;
+    -ms-border-radius: 1.5rem;
+    -o-border-radius: 1.5rem;
+}
+.section .content {
+    color: var(--color-pr);
+}
+.section .content h1 {
+    font-family: var(--font-pr);
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+}
+.section .content p {
+    font-family: var(--font-sc);
+    font-size: 1.2rem;
+    font-weight: 200;
+    line-height: 1.6rem;
+}
 
 
 
