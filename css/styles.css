@@ -189,6 +189,55 @@ section h1 span {
     line-height: 1.6rem;
 }
 
+/* Menu section */
+.menu-section {
+    padding: var(--pad-pr);
+    height: 100rem;
+}
+.menu-section .title {
+    text-align: center;
+    margin-bottom: 5rem;
+    font-family: 'Poppins';
+    font-size: 2rem;
+    font-weight: 700;
+}
+.menu-section .btn-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.btn-container .filter-btn {
+    padding: .7rem 3.5rem;
+    text-align: center;
+    background: none;
+    border: 1px solid var(--color-sc);
+    color: var(--color-pr);
+    border-radius: 20px;
+    font-family: var(--font-pr);
+    font-size: 1.2rem;
+    font-weight: 400;
+    transition: .3s ease;
+    letter-spacing: .3rem;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+    -ms-transition: .3s ease;
+    -o-transition: .3s ease;
+}
+#active { /* for JS activation */
+    background-color: var(--color-pr);
+    color: var(--color-sc);
+    font-weight: 450;
+}
+.btn-container .filter-btn:hover {
+    background-color: var(--color-pr);
+    color: var(--color-sc);
+    font-weight: 450;
+}
+
 
 
 /* Media breakpoint */
