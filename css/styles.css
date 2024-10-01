@@ -144,7 +144,7 @@ header .content a:hover {
 /* About us section */
 section {
     margin-top: 6rem;
-    padding: var(--pad-pr);
+    padding: 0 10%;
 }
 section h1.title {
     color: white;
@@ -165,8 +165,8 @@ section h1 span {
     margin-bottom: 10rem;
 }
 .section img {
-    width: 50rem;
-    height: 25rem;
+    width: 40rem;
+    height: 20rem;
     border-radius: 1.5rem;
     -webkit-border-radius: 1.5rem;
     -moz-border-radius: 1.5rem;
@@ -178,13 +178,13 @@ section h1 span {
 }
 .section .content h1 {
     font-family: var(--font-pr);
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 500;
     margin-bottom: 1.2rem;
 }
 .section .content p {
     font-family: var(--font-sc);
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 200;
     line-height: 1.6rem;
 }
@@ -227,7 +227,7 @@ section h1 span {
         font-weight: 200;
         mix-blend-mode: difference;
         line-height: 1.5rem;
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
     }
     header .content a {
         border: 1px solid #B6895B;
@@ -247,6 +247,9 @@ section h1 span {
     }
     .section .content {
         margin-top: -1rem;
+    }
+    .section .content p {
+        width: 89%;
     }
 }
 /* Tab */
