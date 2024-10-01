@@ -49,6 +49,7 @@ nav {
 .navbar-nav {
     display: flex;
     gap: 6rem;
+    margin-right: 5rem;
 }
 .navbar-nav a{
     text-decoration: none;
@@ -196,7 +197,7 @@ section h1 span {
         font-size: 50%;
     }
     nav {
-        gap: 16.4rem;
+        gap: 22rem;
         padding: 5% 2%;
         align-items: center;
     }
@@ -211,10 +212,11 @@ section h1 span {
     }
     #menu {
         display: block;
+        margin-left: 2rem;
     }
     /* content section */
     header .content {
-        margin-top: 20rem;
+        margin-top: 34rem;
     }
     header .content h1 {
         min-width: 90%;
@@ -225,6 +227,7 @@ section h1 span {
         font-weight: 200;
         mix-blend-mode: difference;
         line-height: 1.5rem;
+        margin-bottom: 3rem;
     }
     header .content a {
         border: 1px solid #B6895B;
