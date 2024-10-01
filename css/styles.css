@@ -213,26 +213,26 @@ section h1 span {
         display: block;
     }
     /* content section */
-    .content {
+    header .content {
         margin-top: 20rem;
     }
-    .content h1 {
+    header .content h1 {
         min-width: 90%;
         font-size: 5rem;
     }
-    .content p {
+    header .content p {
         min-width: 70%;
         font-weight: 200;
         mix-blend-mode: difference;
         line-height: 1.5rem;
     }
-    .content a {
+    header .content a {
         border: 1px solid #B6895B;
         padding: 1rem 2.5rem;
         font-weight: 300;
         font-size: 1.3rem;
     }
-    .content a:hover {
+    header .content a:hover {
         background-color: white;
         color: var(--color-sc);
         font-weight: 400;
@@ -245,6 +245,7 @@ section h1 span {
     .section .content {
         margin-top: -1rem;
     }
+}
 /* Tab */
 @media screen and (min-width:631px) {
     hmtl {
