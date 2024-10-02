@@ -203,7 +203,8 @@ section h1 span {
 }
 .menu-section .btn-container{
     display: flex;
-    justify-content: space-around;
+    gap: 3rem;
+    justify-content: center;
     align-items: center;
 }
 .btn-container .filter-btn {
