@@ -218,16 +218,16 @@ section h1 span {
     font-family: var(--font-pr);
     font-size: 1.2rem;
     font-weight: 400;
-    transition: .3s ease;
+    transition: .5s ease;
     letter-spacing: .3rem;
     -webkit-border-radius: 40px;
     -moz-border-radius: 40px;
     -ms-border-radius: 40px;
     -o-border-radius: 40px;
-    -webkit-transition: .3s ease;
-    -moz-transition: .3s ease;
-    -ms-transition: .3s ease;
-    -o-transition: .3s ease;
+    -webkit-transition: .5s ease;
+    -moz-transition: .5s ease;
+    -ms-transition: .5s ease;
+    -o-transition: .5s ease;
 }
 .btn-container .active { /* for JS activation */
     background-color: var(--color-pr);
