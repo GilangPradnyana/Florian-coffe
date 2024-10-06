@@ -466,12 +466,17 @@ article .content-container {
   }
   .countdown .countdown-container img {
     width: 100%;
-  }
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
   .countdown .content h2 {
     font-size: 1.2rem;
   }
   .countdown .content p {
-    font-weight: 260;
+    font-weight: 360;
   }
   .deadline {
     gap: 1.5rem;
@@ -481,10 +486,12 @@ article .content-container {
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 0.58rem;
+    font-weight: 600;
   }
   .deadline h4:not(.expired) {
     font-size: 1.8rem;
     margin-bottom: 0.25rem;
+    font-weight: 400;
   }
 
 
