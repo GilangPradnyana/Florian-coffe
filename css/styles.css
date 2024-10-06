@@ -312,6 +312,7 @@ article .content-container {
 /* countdown content section */
 .countdown .countdown-container {
   display: flex;
+  gap: 3rem;
 }
 .countdown-container img {
   width: 50%;
@@ -325,7 +326,6 @@ article .content-container {
 .countdown-container .content {
   color: var(--color-pr);
   font-family: var(--font-pr);
-  padding-left: 2rem;
 }
 .countdown-container .content h1 {
   font-size: 2.2rem;
