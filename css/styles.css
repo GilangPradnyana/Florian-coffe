@@ -436,9 +436,61 @@ article .content-container {
   .section .content p {
     width: 89%;
   }
+
+  /* menu list section */
+  .menu-section {
+    padding: 0 10%;
+  }
+  .menu-section .btn-container {
+    justify-content: space-between;
+    gap: 0;
+  }
+  article {
+    grid-template-columns: 1fr;
+  }
+  .btn-container .filter-btn {
+    padding: 0.2rem 2rem;
+  }
+  .content-container img {
+    width: 162.5px;
+    height: 85px;
+  }
+  .item-info .item-text {
+    font-weight: 100 !important;
+    font-size: 6px !important;
+  }
+
+  /* COUNTDOWN SECTION */
+  .countdown .countdown-container {
+    flex-wrap: wrap;
+  }
+  .countdown .countdown-container img {
+    width: 100%;
+  }
+  .countdown .content h2 {
+    font-size: 1.2rem;
+  }
+  .countdown .content p {
+    font-weight: 260;
+  }
+  .deadline {
+    gap: 1.5rem;
+  }
+  .deadline-format span {
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.58rem;
+  }
+  .deadline h4:not(.expired) {
+    font-size: 1.8rem;
+    margin-bottom: 0.25rem;
+  }
+
+
 }
 /* Tab */
-@media screen and (min-width: 631px) {
+@media screen and (min-width: 700px) {
   hmtl {
     font-size: 70%;
   }
