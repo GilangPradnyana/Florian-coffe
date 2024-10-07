@@ -572,9 +572,13 @@ article .content-container {
     width: 162.5px;
     height: 85px;
   }
+  .content-container .item-info .header-item h4{
+    font-size: .9rem !important;
+
+  }
   .item-info .item-text {
-    font-weight: 240 !important;
-    font-size: 6px !important;
+    font-weight: 340 !important;
+    font-size: .5rem !important;
   }
 
   /* COUNTDOWN SECTION */
