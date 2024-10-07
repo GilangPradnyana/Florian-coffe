@@ -497,9 +497,124 @@ article .content-container {
 
 }
 /* Tab */
-@media screen and (min-width: 700px) {
-  hmtl {
-    font-size: 70%;
+@media screen and (min-width: 700px) and (max-width: 1024px) {
+  nav {
+    gap: 25rem;
+    padding: 5% 2%;
+    align-items: center;
+  }
+  .navbar-nav {
+    display: none;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .ham {
+    color: white;
+  }
+  #menu {
+    display: block;
+    margin-left: 2rem;
+  }
+  /* content section */
+  header .content {
+    margin-top: 15rem;
+  }
+  header .content h1 {
+    min-width: 90%;
+    font-size: 5rem;
+  }
+  header .content p {
+    min-width: 70%;
+    font-weight: 200;
+    mix-blend-mode: difference;
+    line-height: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  header .content a {
+    border: 1px solid #b6895b;
+    padding: 1rem 2.5rem;
+    font-weight: 300;
+    font-size: 1.3rem;
+  }
+  header .content a:hover {
+    background-color: white;
+    color: var(--color-sc);
+    font-weight: 400;
+  }
+
+  /* about us */
+  .section {
+    flex-wrap: wrap;
+  }
+  .section .content {
+    margin-top: -1rem;
+  }
+  .section .content p {
+    width: 89%;
+  }
+
+  /* menu list section */
+  .menu-section {
+    padding: 0 2%;
+  }
+  .menu-section .btn-container {
+    justify-content: space-between;
+    gap: 0;
+  }
+  article {
+    grid-template-columns: 1fr 1fr;
+  }
+  .btn-container .filter-btn {
+    padding: 0.2rem 2rem;
+  }
+  .content-container img {
+    width: 162.5px;
+    height: 85px;
+  }
+  .item-info .item-text {
+    font-weight: 240 !important;
+    font-size: 6px !important;
+  }
+
+  /* COUNTDOWN SECTION */
+  .countdown .countdown-container {
+    flex-wrap: wrap;
+  }
+  .countdown .countdown-container img {
+    width: 100%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+  .countdown .content h2 {
+    font-size: 1.2rem;
+  }
+  .countdown .content p {
+    font-weight: 360;
+  }
+  .deadline {
+    gap: 1.5rem;
+  }
+  .deadline-format span {
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.58rem;
+    font-weight: 600;
+  }
+  .deadline h4:not(.expired) {
+    font-size: 1.8rem;
+    margin-bottom: 0.25rem;
+    font-weight: 400;
   }
 }
 /* Desktop */
+@media screen and (min-width: 1020px) {
+  hmtl {
+    font-size: 100%;
+
+  }
+}
