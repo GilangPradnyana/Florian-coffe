@@ -293,7 +293,7 @@ article .content-container {
   font-family: var(--font-sc);
   line-height: 1.2rem;
   font-weight: 230;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 
 /* COUNTDOWN SECTION */
@@ -456,7 +456,7 @@ article .content-container {
     height: 85px;
   }
   .item-info .item-text {
-    font-weight: 100 !important;
+    font-weight: 240 !important;
     font-size: 6px !important;
   }
 
