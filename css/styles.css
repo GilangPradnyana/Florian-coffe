@@ -144,13 +144,13 @@ header .content a:hover {
 
 /* About us section */
 section {
-  margin-top: 6rem;
+  margin-top: 3.2rem;
   padding: 0 10%;
 }
 section h1.title {
   color: white;
   text-align: center;
-  margin-bottom: 5rem;
+  margin-bottom: 3.5rem;
   font-family: "Poppins";
   font-size: 2rem;
   font-weight: 700;
@@ -163,7 +163,7 @@ section h1 span {
   display: flex;
   justify-content: space-around;
   gap: 2rem;
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
 }
 .section img {
   width: 40rem;
@@ -197,7 +197,7 @@ section h1 span {
 }
 .menu-section .title {
   text-align: center;
-  margin-bottom: 5rem;
+  margin-bottom: 2.5rem;
   font-family: "Poppins";
   font-size: 2rem;
   font-weight: 700;
@@ -304,7 +304,7 @@ article .content-container {
 .countdown .title {
   color: white;
   text-align: center;
-  margin-bottom: 5rem;
+  margin-bottom: 2.5rem;
   font-family: "Poppins";
   font-size: 2rem;
   font-weight: 700;
