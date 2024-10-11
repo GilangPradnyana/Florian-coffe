@@ -380,6 +380,7 @@ article .content-container {
 .faq {
   padding: var(--pad-pr);
   color: var(--color-pr);
+  margin-bottom: 19rem;
 }
 .faq .title {
   text-align: center;
@@ -387,7 +388,6 @@ article .content-container {
   margin-bottom: 2.5rem;
 }
 .faq .content {
-  height: 100vh;
   max-width: 50%;
   margin: 0 auto;
 }
@@ -457,6 +457,17 @@ article .content-container {
 }
 .show-text .plus-icon {
   display: none;
+}
+
+/* FOOTER SECTION */
+footer {
+  padding: 1.5rem;
+  background-color: var(--color-fr);
+  font-size: 1.2rem;
+  color: var(--color-pr);
+  text-align: center;
+  font-family: var(--font-sc);
+  font-weight: 500;
 }
 
 
@@ -580,7 +591,7 @@ article .content-container {
 
   /* GENERAL ASKING QUESTION SECTION */
   .faq .content {
-    min-width: 70%;
+    min-width: 75%;
   }
 
 }
@@ -702,7 +713,12 @@ article .content-container {
     margin-bottom: 0.25rem;
     font-weight: 400;
   }
-  
+
+  /* FAQ SECTION */
+  .faq .content {
+    min-width: 80%;
+  }
+
 }
 /* Desktop */
 @media screen and (min-width: 1020px) {
