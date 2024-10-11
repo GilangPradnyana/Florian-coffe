@@ -412,6 +412,7 @@ article .content-container {
   font-family: var(--font-pr);
 }
 .faq .content .question .question-text {
+  letter-spacing: 2px;
   border-top: 1px solid ;
   margin-top: 1rem;
   padding-top: 1rem;
