@@ -81,12 +81,12 @@ nav {
   -ms-transform: scale(1);
   -o-transform: scale(1);
 }
-.feather {
+.feather-nav {
   color: var(--color-pr);
   display: flex;
   gap: 2rem;
 }
-.feather:hover {
+.feather-nav:hover {
   color: var(--color-sc);
 }
 #menu {
@@ -299,7 +299,7 @@ article .content-container {
 /* COUNTDOWN SECTION */
 .countdown {
   padding: 0 10%;
-  height: 100rem;
+  margin-bottom: 10rem;
 }
 .countdown .title {
   color: white;
@@ -375,6 +375,89 @@ article .content-container {
   font-size: 2rem;
   margin-bottom: 0.25rem;
 }
+
+/* GENERAL QUESTION */
+.faq {
+  padding: var(--pad-pr);
+  color: var(--color-pr);
+}
+.faq .title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+}
+.faq .content {
+  height: 100vh;
+  max-width: 50%;
+  margin: 0 auto;
+}
+/* content of FAQ */
+.faq .content .question {
+  margin-bottom: 2rem;
+  border-radius: .5rem;
+  background: var(--color-pad);
+  padding: .8rem 1rem;
+  -webkit-border-radius: .5rem;
+  -moz-border-radius: .5rem;
+  -ms-border-radius: .5rem;
+  -o-border-radius: .5rem;
+}
+.faq .content .question .question-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  font-family: var(--font-pr);
+}
+.faq .content .question .question-text {
+  border-top: 1px solid ;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  font-family: var(--font-sc);
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: #bcbcbc;
+}
+
+/* question btn */
+.faq .content .question .question-title .question-btn{
+  font-size: 1.5rem;
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  color: var(--color-pr);
+  transition: .7s;
+  -webkit-transition: .7s;
+  -moz-transition: .7s;
+  -ms-transition: .7s;
+  -o-transition: .7s;
+}
+.faq .content .question .question-title .question-btn:hover{
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+}
+/* Activation for JS */
+ .question-text {
+  display: none;
+}
+.show-text .question-text {
+  display: block;
+}
+.minus-icon{
+  display: none;
+}
+.show-text .minus-icon {
+  display: inline-block;
+}
+.show-text .plus-icon {
+  display: none;
+}
+
 
 /* Media breakpoint */
 @media screen and (max-width: 700px) {
