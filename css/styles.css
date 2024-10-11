@@ -658,8 +658,8 @@ footer {
     padding: 0 2%;
   }
   .menu-section .btn-container {
-    justify-content: space-between;
-    gap: 0;
+
+    gap: 2rem;
   }
   article {
     grid-template-columns: 1fr 1fr;
