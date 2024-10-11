@@ -577,6 +577,10 @@ article .content-container {
     font-weight: 400;
   }
 
+  /* GENERAL ASKING QUESTION SECTION */
+  .faq .content {
+    min-width: 70%;
+  }
 
 }
 /* Tab */
@@ -697,6 +701,7 @@ article .content-container {
     margin-bottom: 0.25rem;
     font-weight: 400;
   }
+  
 }
 /* Desktop */
 @media screen and (min-width: 1020px) {
