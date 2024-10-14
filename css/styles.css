@@ -24,7 +24,7 @@ header {
   background-size: cover;
   height: 100vh;
   align-items: center;
-  position: relative;
+  border: 1px solid rgb(0, 0, 0, 0) ;
 }
 /* nav */
 nav {
@@ -35,7 +35,13 @@ nav {
 }
 .show-navbar {
   /* for JS */
-  background-color: rgba(30, 32, 30, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: rgb(18, 21, 18);
+  z-index: 6;
 }
 .title {
   font-family: var(--font-pr);
@@ -480,6 +486,10 @@ footer {
     gap: 22rem;
     padding: 5% 2%;
     align-items: center;
+    position: none;
+    width: 100%;
+    background-color: rgb(18, 21, 18);
+    z-index: 6;
   }
   .navbar-nav {
     display: none;
@@ -489,10 +499,6 @@ footer {
   }
   .ham {
     color: white;
-  }
-  #menu {
-    display: block;
-    margin-left: 2rem;
   }
   /* content section */
   header .content {
@@ -613,7 +619,7 @@ footer {
   }
   #menu {
     display: block;
-    margin-left: 2rem;
+    margin-left: 5rem;
   }
   /* content section */
   header .content {
