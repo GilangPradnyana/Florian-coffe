@@ -25,7 +25,7 @@ const menu = [
     title: 'Sandwich Lava',
     category: 'lunch',
     price: '20.44',
-    img: 'img/sandwich-lava.jpg',
+    img: 'img/sandiwch-lava.jpg',
     desc: ` vaporware iPhone mumblecore selvage raw denim slow-carb leggings gochujang
         helvetica man braid jianbing. Marfa thundercats Lorem ipsum dolor sit amet consectetur
         adipisicing` 
@@ -44,7 +44,7 @@ const menu = [
     title: 'Latte Coffe',
     category: 'coffe',
     price:'7.4$',
-    img: 'img/latte-coffe.img',
+    img: 'img/latte-coffe.jpg',
     desc: ` I'm baby woke mlkshk wolf bitters live-edge blue
             bottle, hammock freegan copper mug whatever cold-pressed`
  },
@@ -102,7 +102,7 @@ const months = [
 
 // Main JS
 window.addEventListener('DOMContentLoaded',()=> {
-   // displayMenuItems(menu);
+   displayMenuItems(menu);
    // displayMenuBtns();
    // getRemainingTime();
 });
@@ -116,6 +116,28 @@ window.addEventListener('scroll',()=> {
       navbar.classList.add('show-navbar');
    } else {
       navbar.classList.remove('show-navbar');
-   }
-})
+   };
+});
 
+// MENU SECTION
+const menuSection = document.querySelector('.menu-list');
+const btnSection = document.querySelector('.btn.container');
+// Load menu content
+function displayMenuItems(menu) {
+   const menuCategories = menu.map((item) =>{
+      return `<div class="content-container">
+                <img src="${item.img}" alt="${item.title}" class="photo">
+                <!-- content desc -->
+                <div class="item-info">
+                    <div class="header-item">
+                        <h4>${item.title}</h4>
+                        <p>${item.price}</p>
+                    </div>
+                    <p class="item-text">
+                        ${item.desc}
+                    </p>
+                </div>
+            </div>`
+   }).join('');
+   menuSection.innerHTML = menuCategories;
+};
