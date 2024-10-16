@@ -173,3 +173,24 @@ function displayMenuBtns() {
       });
    });
 };
+
+// COUNTDOWN SECTION
+const giveaway = document.querySelector('.giveaway-text');
+const deadline = document.querySelector('.deadline');
+const count = document.querySelectorAll('.deadline-format h4');
+// Setup
+let tempDate = new Date();
+let tempYear = tempDate.getFullYear();
+let tempMonth = tempDate.getMonth();
+let tempDay = tempDate.getDate();
+
+const futureDate = new Date(tempYear, tempMonth, tempDay + 50,10,20,0);
+const year = futureDate.getFullYear();
+const hours = futureDate.getHours();
+const minutes = futureDate.getMinutes();
+
+let month = months[futureDate.getMonth()];
+const weekday = weekdays[futureDate.getDay()];
+const date = futureDate.getDate();
+giveaway.textContent = `Grand Opeing on ${weekday}, ${date}, ${month}, ${year} ${hours}:${minutes}am`;
+
