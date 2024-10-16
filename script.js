@@ -3,7 +3,7 @@ const menu = [
  {
     id:1,
     title: 'Croissant with coffe',
-    category: 'pastry',
+    category: 'Pastry',
     price: '17.44$',
     img: 'img/crossiant-coffe.jpg',
     desc: `Im baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan
@@ -13,7 +13,7 @@ const menu = [
  {
     id:2,
     title: 'Hamburger Bucket',
-    category: 'lunch',
+    category: 'Lunch',
     price: '19.14$',
     img: 'img/img3.jpg',
     desc: `vaporware iPhone mumblecore selvage raw denim slow-carb leggings gochujang
@@ -23,7 +23,7 @@ const menu = [
  {
     id:3,
     title: 'Sandwich Lava',
-    category: 'lunch',
+    category: 'Lunch',
     price: '20.44',
     img: 'img/sandiwch-lava.jpg',
     desc: ` vaporware iPhone mumblecore selvage raw denim slow-carb leggings gochujang
@@ -33,7 +33,7 @@ const menu = [
  {
     id:4,
     title: 'American Coffe',
-    category: 'coffe',
+    category: 'Coffe',
     price: '5.4$',
     img:'img/american-coffe.jpg',
     desc: `Shabby chic keffiyeh neutra snackwave pork belly shoreditch.
@@ -42,7 +42,7 @@ const menu = [
  {
     id: 5,
     title: 'Latte Coffe',
-    category: 'coffe',
+    category: 'Coffe',
     price:'7.4$',
     img: 'img/latte-coffe.jpg',
     desc: ` I'm baby woke mlkshk wolf bitters live-edge blue
@@ -51,7 +51,7 @@ const menu = [
  {
     id: 6,
     title: 'Brisket Beast',
-    category: 'lunch',
+    category: 'Lunch',
     price: '10.2$',
     img: 'img/brisket-beast.jpg',
     desc: ` Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis quaerat quasi vitae sit,
@@ -60,7 +60,7 @@ const menu = [
  {
     id: 7,
     title: 'PacPac Cungo',
-    category: 'pastry',
+    category: 'Pastry',
     price: '11.22$',
     img: 'img/pacpac-cungo.jpg',
     desc: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum necessitatibus
@@ -69,7 +69,7 @@ const menu = [
  {
     id: 8,
     title: 'Croissant Brugaret',
-    category: 'pastry',
+    category: 'Pastry',
     price: '11.12$',
     img: 'img/croissant-burg.jpg',
     desc: `Lorem ipsum dolor Lorem, ipsum dolor Lorem ipsum dolor sit, amet
@@ -103,7 +103,7 @@ const months = [
 // Main JS
 window.addEventListener('DOMContentLoaded',()=> {
    displayMenuItems(menu);
-   // displayMenuBtns();
+   displayMenuBtns();
    // getRemainingTime();
 });
 // NAVBAR SECTION
@@ -121,7 +121,7 @@ window.addEventListener('scroll',()=> {
 
 // MENU SECTION
 const menuSection = document.querySelector('.menu-list');
-const btnSection = document.querySelector('.btn.container');
+const btnSection = document.querySelector('.btn-container');
 // Load menu content
 function displayMenuItems(menu) {
    const menuCategories = menu.map((item) =>{
@@ -140,4 +140,36 @@ function displayMenuItems(menu) {
             </div>`
    }).join('');
    menuSection.innerHTML = menuCategories;
+};
+// MENU BTNS
+function displayMenuBtns() {
+   const categories = menu.reduce((values, item)=> {
+      if(!values.includes(item.category)) {
+         values.push(item.category)
+      };
+      return values;
+   },['all']); 
+   // Showing btns
+   const showBtns = categories.map((item)=> {
+      return ` <button type="button" class="filter-btn" data-id="${item}">${item}</button>`
+   }).join('');
+   btnSection.innerHTML = showBtns;
+
+   // Shorting categories
+   const filterBtns = document.querySelectorAll('.filter-btn');
+   filterBtns.forEach((el)=> {
+      el.addEventListener('click',(btns)=> {
+         const itemID = btns.currentTarget.dataset.id;
+         const menuShorting = menu.filter((items)=> {
+            if(items.category == itemID) {
+               return items;
+            };
+         });
+         if(itemID == 'all') {
+            displayMenuItems(menu);
+         } else {
+            displayMenuItems(menuShorting)
+         };
+      });
+   });
 };
