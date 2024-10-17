@@ -223,7 +223,23 @@ function getRemainingTime() {
    if(deadlineTime < 0) {
       clearInterval(countdown);
       deadline.innerHTML = `<h5>Giveaway was expired</h5>`
-   }
-}
+   };
+};
 let countdown = setInterval(getRemainingTime, 1000);
 getRemainingTime();
+
+// FAQ SECTION
+const faqSection = document.querySelectorAll('.question');
+faqSection.forEach((question)=> {
+   const item = question.querySelector('.question-btn');
+   item.addEventListener('click', ()=> {
+      faqSection.forEach((el)=> {
+         // if the statement true remove the showing text class
+         if(el !== question) {
+            el.classList.remove('show-text');
+         };
+      });
+      // if the statement passed showing the text 
+      question.classList.toggle('show-text')
+   });
+})
