@@ -104,7 +104,6 @@ const months = [
 window.addEventListener('DOMContentLoaded',()=> {
    displayMenuItems(menu);
    displayMenuBtns();
-   // getRemainingTime();
 });
 // NAVBAR SECTION
 const navbar = document.getElementById('nav');
@@ -194,3 +193,37 @@ const weekday = weekdays[futureDate.getDay()];
 const date = futureDate.getDate();
 giveaway.textContent = `Grand Opeing on ${weekday}, ${date}, ${month}, ${year} ${hours}:${minutes}am`;
 
+const futureTime = futureDate.getTime();
+function getRemainingTime() {
+   const today = new Date().getTime();  
+   const deadlineTime = futureTime - today;
+   // the template
+   const oneDay = 24*60*60*1000;
+   const oneHour = 60*60*1000;
+   const oneMinute = 60*1000;
+   // calculate all values
+   let days = Math.floor(deadlineTime / oneDay);
+   let hour = Math.floor((deadlineTime % oneDay) / oneHour);
+   let minutes = Math.floor((deadlineTime % oneHour) / oneMinute);
+   let milsc = Math.floor((deadlineTime % oneMinute) / 1000);
+   // set all the time data
+   const values = [days, hour, minutes, milsc];
+   // add the '0' before number
+   function format(item) {
+      if(item < 10) {
+         return `0${item}`
+      }
+      return item;
+   };
+   // added the countdown
+   count.forEach((item, index)=> {
+      item.innerHTML = format(values[index]);
+   });
+   // when the countdown passed
+   if(deadlineTime < 0) {
+      clearInterval(countdown);
+      deadline.innerHTML = `<h5>Giveaway was expired</h5>`
+   }
+}
+let countdown = setInterval(getRemainingTime, 1000);
+getRemainingTime();
