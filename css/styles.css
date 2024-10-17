@@ -15,6 +15,7 @@
 html {
   padding: var(--pad-body);
   background-color: #010101;
+  scroll-behavior: smooth;
 }
 /* HEADER */
 header {
