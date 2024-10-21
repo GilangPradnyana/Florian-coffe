@@ -92,13 +92,12 @@ nav {
   color: var(--color-pr);
   display: flex;
   gap: 2rem;
+  display: none;
 }
 .feather-nav:hover {
   color: var(--color-sc);
 }
-#menu {
-  display: none;
-}
+
 
 /* content section */
 header .content {
